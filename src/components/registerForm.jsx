@@ -12,7 +12,7 @@ const RegisterForm = () => {
     e.preventDefault(); // Evita o comportamento padrão do formulário (recarregar a página)
     try {
       // Faz a requisição POST para o backend com os dados do usuário
-      const response = await axios.post("http://localhost:5000/api/users", {
+      const response = await axios.post("https://backend-portalturismo-kcl1.onrender.com/api/users", {
         name: nome,
         email,
         password: senha,

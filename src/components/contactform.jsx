@@ -24,7 +24,7 @@ const ContactForm = () => {
 
     try {
       // Envia os dados para a API no endpoint indicado usando POST
-      const response = await axios.post("http://localhost:5000/api/contacts", {
+      const response = await axios.post("https://backend-portalturismo-kcl1.onrender.com/api/contacts", {
         name: formData.name,
         email: formData.email,
         message: formData.message,
